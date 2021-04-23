@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librov.ru</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="profile-page">
+        <div class="container">
+            <div class="profile">
+                <div class="profile__profile-menu-wrapper">
+                    <div class="profile__tag-title fn-st">Либров / Личный кабинет</div>
+                    <h1 class="title-1">Личный кабинет</h1>
+                </div>
+                <div class="profile__profile-content-wrapper fav">
+                    <div class="profile__profile-user-content">
+                        <div class="proflie__profile-active-form">
+                            <div class="profile__profile-user">
+                                <div class="profile__profile-userpics">
+                                    <img src="img/profile/userpic.jpg" alt="Пользователь">
+                                </div>
+                                <div class="profile__profile-user-info">
+                                    <h2 class="profile__nameuser-title">Владимир</h2>
+                                    <div class="profile__user-location">Лиски</div>
+                                </div>
+                            </div>
+                            <div class="profile__profile-edit">
+                                <a class="profile-edit__select edit" href="setting.html">
+                                    <svg width="30" height="30" viewBox="0 0 30 30">
+                                        <image id="Слой_34" data-name="Слой 34" width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflBBUDNwJkVV69AAACM0lEQVQ4y5WUS2xMURjHv5GRqjFmOk+DsGcluu2G8dggJAi18IpIpJ2NFkVC11hYiBCxspLMtCqdYjAeJWlC0hAkook0GqVJF/qIMZ2fxZw5ztx72o7/3Zz7nfu73+N83xGkhmcL78mTorHaXgu6mVHKOk4d3v+BN/FDoa0kyHGfSK1wkp8AFGkhygsAshV8voBHACiRIk6eirLE5oM3Mq4+PkGYp5jKsmIueKvKdYYUy3mGU3tmh5OM6QoneOVCzxCi3o7uU2WaoZWokWtFpwmT45gNPciEzjXCa4vXBh4D3W70CFMaXaYOx9RJYuQA+Ob2+lsHHLEE3EGIPrW+W40eZhqASVpYafHaQZwnat1FyESbKQBQYAdhnrvQUwR5oNZpFptHdVSZJ9lJ3IqGeaRRv9lha/jMJTK8YzcR+l3oWUI81AE3VPd2Oz0ICwmwlDcutI2gRtMsqZ4qL72klCnAbQfaTszwGnTOc5hBmrRxEdc1WOQQUaPCAfdNkmSQqGH2cA2AaQ7g0xXO4LNdQ1e46WiWOm4xxX78ehR1mZxwml2uNq1nrZFr5l+ZquFVDHMRj2VErmrUb5s+QdhLiRLnLNuXK41on3pB6FT/73RtNwNddq9l2K8PAs6zQG0k2EAbb+kxz9X5eGW1rJeKLkhR+qRRmmSdFGVEbsgd+SWzysN26TbeC/JBvsiQ3JOPMi4lmVNe2aZW32VABuSTvJRRqVEe+sUnvZKXrzIkf2rFyvoLzhlSMJO7CiUAAAAASUVORK5CYII="/>
+                                    </svg>  
+                                </a>
+                                <a class="profile-edit__select delete" href="#">
+                                    <svg width="30" height="32" viewBox="0 0 26 32">
+                                        <image id="Layer_4_copy" data-name="Layer 4 copy" width="26" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAQAAACmoqCOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflBBYWHTIlv2xMAAACAklEQVQ4y5WVP2gUQRTGf7u34Tyw0aQIWESx0DQKiZ0i2KTQLqithaJYiQYklYhiY6+NTVo7SRcLxUYEtQiSWIgYCxW80xx7ucvt7Z/PYudm/0S9zTfFzpv3vu/NezO7iyiNhm7pvVpqqqmW1nRf+8sxjgCOcpg9COhxnssU8Ywn1HFwCPnKKjhyucZtDhbCnvMSATDLhYKnySMeonlFkhK15cuXr65eacJupa6n2lJHvny1FUqSbjhaYY433KGNC4DLBj9y2vs4YrIm1FnkHKvok6SbO9rxr3FJib55uMBV5vAYjYgDOIBea7f4WLv7BZeASVPRKHzgBY/TnZ5Vp2KWK0JGPyK2WusssmStZRZ4ay3RM0+hM/pptRaEJrQuSdrUIaGLSoyvr/ksU0Bo1Xxgi6aZbwIt6w0ZpEcJEJNYkgd41MxBj5kVTFyckbr0K/UuJMhIPt1KpEEqvrOm/yEpbi+oROrRyUiDipm28TNSQrT7miK2K5H6aZxrNaogTstwrUYVhGkZQ9LvglPmBR8+s+4leVInp4YNdYkgd8UGw+UU2Tkdo8E00wBMcooGJxgzPtNjz2YSDgDXmWGKcQBqLLHGjPFAq0gKiM3c42SuinFO5yy/uL24VPLfUarpe4XbF/Mr112hvXo38qOyoan8XwNglnsct30qI+IzD1hJjT9jMpw4WnqL6gAAAABJRU5ErkJggg=="/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__profile-user-content">
+                        <div class="proflie__profile-active-form">
+                            <div class="profile__profile-user">
+                                <div class="profile__profile-userpics">
+                                    <img src="img/profile/userpic.jpg" alt="Пользователь">
+                                </div>
+                                <div class="profile__profile-user-info">
+                                    <h2 class="profile__nameuser-title">Владимир</h2>
+                                    <div class="profile__user-location">Лиски</div>
+                                </div>
+                            </div>
+                            <div class="profile__profile-edit">
+                                <a class="profile-edit__select edit" href="#">
+                                    <svg width="30" height="30" viewBox="0 0 30 30">
+                                        <image id="Слой_34" data-name="Слой 34" width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflBBUDNwJkVV69AAACM0lEQVQ4y5WUS2xMURjHv5GRqjFmOk+DsGcluu2G8dggJAi18IpIpJ2NFkVC11hYiBCxspLMtCqdYjAeJWlC0hAkook0GqVJF/qIMZ2fxZw5ztx72o7/3Zz7nfu73+N83xGkhmcL78mTorHaXgu6mVHKOk4d3v+BN/FDoa0kyHGfSK1wkp8AFGkhygsAshV8voBHACiRIk6eirLE5oM3Mq4+PkGYp5jKsmIueKvKdYYUy3mGU3tmh5OM6QoneOVCzxCi3o7uU2WaoZWokWtFpwmT45gNPciEzjXCa4vXBh4D3W70CFMaXaYOx9RJYuQA+Ob2+lsHHLEE3EGIPrW+W40eZhqASVpYafHaQZwnat1FyESbKQBQYAdhnrvQUwR5oNZpFptHdVSZJ9lJ3IqGeaRRv9lha/jMJTK8YzcR+l3oWUI81AE3VPd2Oz0ICwmwlDcutI2gRtMsqZ4qL72klCnAbQfaTszwGnTOc5hBmrRxEdc1WOQQUaPCAfdNkmSQqGH2cA2AaQ7g0xXO4LNdQ1e46WiWOm4xxX78ehR1mZxwml2uNq1nrZFr5l+ZquFVDHMRj2VErmrUb5s+QdhLiRLnLNuXK41on3pB6FT/73RtNwNddq9l2K8PAs6zQG0k2EAbb+kxz9X5eGW1rJeKLkhR+qRRmmSdFGVEbsgd+SWzysN26TbeC/JBvsiQ3JOPMi4lmVNe2aZW32VABuSTvJRRqVEe+sUnvZKXrzIkf2rFyvoLzhlSMJO7CiUAAAAASUVORK5CYII="/>
+                                    </svg>  
+                                </a>
+                                <a class="profile-edit__select delete" href="#">
+                                    <svg width="30" height="30" viewBox="0 0 30 30">
+                                        <image id="Layer_4_copy" data-name="Layer 4 copy" width="26" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAQAAACmoqCOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflBBYWHTIlv2xMAAACAklEQVQ4y5WVP2gUQRTGf7u34Tyw0aQIWESx0DQKiZ0i2KTQLqithaJYiQYklYhiY6+NTVo7SRcLxUYEtQiSWIgYCxW80xx7ucvt7Z/PYudm/0S9zTfFzpv3vu/NezO7iyiNhm7pvVpqqqmW1nRf+8sxjgCOcpg9COhxnssU8Ywn1HFwCPnKKjhyucZtDhbCnvMSATDLhYKnySMeonlFkhK15cuXr65eacJupa6n2lJHvny1FUqSbjhaYY433KGNC4DLBj9y2vs4YrIm1FnkHKvok6SbO9rxr3FJib55uMBV5vAYjYgDOIBea7f4WLv7BZeASVPRKHzgBY/TnZ5Vp2KWK0JGPyK2WusssmStZRZ4ay3RM0+hM/pptRaEJrQuSdrUIaGLSoyvr/ksU0Bo1Xxgi6aZbwIt6w0ZpEcJEJNYkgd41MxBj5kVTFyckbr0K/UuJMhIPt1KpEEqvrOm/yEpbi+oROrRyUiDipm28TNSQrT7miK2K5H6aZxrNaogTstwrUYVhGkZQ9LvglPmBR8+s+4leVInp4YNdYkgd8UGw+UU2Tkdo8E00wBMcooGJxgzPtNjz2YSDgDXmWGKcQBqLLHGjPFAq0gKiM3c42SuinFO5yy/uL24VPLfUarpe4XbF/Mr112hvXo38qOyoan8XwNglnsct30qI+IzD1hJjT9jMpw4WnqL6gAAAABJRU5ErkJggg=="/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="libs/jquery/jquery-3.5.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>

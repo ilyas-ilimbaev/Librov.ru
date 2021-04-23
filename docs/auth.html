@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librov.ru</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header__select-button_container mb-34">
+                    <div class="header__select-button">
+                        <a class="select-button" href="#">Добавить объявление
+                            <svg width="30" height="30" viewBox="0 0 30 30">
+                                <image id="Слой_34" data-name="Слой 34" width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAQAAACROWYpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQflBBUDNwJkVV69AAACM0lEQVQ4y5WUS2xMURjHv5GRqjFmOk+DsGcluu2G8dggJAi18IpIpJ2NFkVC11hYiBCxspLMtCqdYjAeJWlC0hAkook0GqVJF/qIMZ2fxZw5ztx72o7/3Zz7nfu73+N83xGkhmcL78mTorHaXgu6mVHKOk4d3v+BN/FDoa0kyHGfSK1wkp8AFGkhygsAshV8voBHACiRIk6eirLE5oM3Mq4+PkGYp5jKsmIueKvKdYYUy3mGU3tmh5OM6QoneOVCzxCi3o7uU2WaoZWokWtFpwmT45gNPciEzjXCa4vXBh4D3W70CFMaXaYOx9RJYuQA+Ob2+lsHHLEE3EGIPrW+W40eZhqASVpYafHaQZwnat1FyESbKQBQYAdhnrvQUwR5oNZpFptHdVSZJ9lJ3IqGeaRRv9lha/jMJTK8YzcR+l3oWUI81AE3VPd2Oz0ICwmwlDcutI2gRtMsqZ4qL72klCnAbQfaTszwGnTOc5hBmrRxEdc1WOQQUaPCAfdNkmSQqGH2cA2AaQ7g0xXO4LNdQ1e46WiWOm4xxX78ehR1mZxwml2uNq1nrZFr5l+ZquFVDHMRj2VErmrUb5s+QdhLiRLnLNuXK41on3pB6FT/73RtNwNddq9l2K8PAs6zQG0k2EAbb+kxz9X5eGW1rJeKLkhR+qRRmmSdFGVEbsgd+SWzysN26TbeC/JBvsiQ3JOPMi4lmVNe2aZW32VABuSTvJRRqVEe+sUnvZKXrzIkf2rFyvoLzhlSMJO7CiUAAAAASUVORK5CYII="/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__link-users">
+                        <a href="auth.html" class="header__link-auth fn-st">Войти</a>
+                        <a href="#" class="header__link-reg fn-st">Регистрация</a>
+                    </div>
+                </div>
+                <div class="header__link-socials">
+                    <a href="#" class="icon-socials">
+                        <svg width="35" height="35" viewBox="0 0 35 35">
+                            <image id="Слой_51" data-name="Слой 51" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAkCAMAAAA5HAOUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEWFnOgWTNoAQ9gBRtkBR9kAOddvjOWIoOlvj+WIoOlvj+WFneiQpelcfuJReOFReuFQdOGJn+gXV9sATtkEUdoEUtoARtgXVtsATdkEUNoARdgDT9oATtoCT9oDUNoHUNoMUdoMUNoJTdkAQdcAS9lGdOHBzvTAzvTAzvO6xvKWsu5xleglXNxkiOT////l6fpLeuMASNgAR9hgheTc5PkSU9sATdrv8/15mOhwj+d9l+jc4/g8ceEAStnm7vwDVdwAQ9cAOtZbguT9/P4/eeMCVd0AO9ZDceD7+v79/f4eX97s8v0/c+AzZd1FbOCxwfKXse4FSdkBT9r9/v/u8Pvs7/r8/f6bru0IRtkFUNra3/h1mOkMTtkCTtr+/v/p7vzo7fzn7fzw9v2atO/o7/wWWt0MTdkiYt6mvvH6+v48cOAASNnn7/wJW94ATNkBTtoAQ9glYd74+f1lj+cARNgLXN4AT9kAQtcvYd73+P1rk+cKVdwAR9koYt2zxPL+/f9RfeL8/f/e5/rc5Prb5frt8/3J1/YFStgET9phhuTk6Po5at9iheTl6/qeuO8kX90CTdokXt1ni+Zih+ZjiOZbhOVJd+EhXd0ARNcPTtoASdkAPNdsjOUAAACuXCXFAAAAEnRSTlPL8/Pz8/Pp1/fV9OFe3vPz84DAq20aAAAAAWJLR0SdBrvysQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+UEFQMUJub/zQ0AAAE9SURBVDjLY2BgZGLGD1hY2RjYhYRF8ANRMQ4GTnEJSfxARIprKKiSloAAGVk8quTkFcBAUUlKWUUElyoVVTV1ENDQ1NLWkRLBoUpMVw8O9A0M5bCrMjJGqNIzMTXDo8rcwtLKGqTMxhaPKjt7B0cnZyDDBa8qVzE3dw89PU8vFTyqvH18/fyBdEBgEB5VwSGhYUAqPMI2krAfo6JjYvGoiotPSEwCqUuGhysWVSmpaYrpGUBGZlY2blU5uXn5BYVFQFZxCR5VpWUi5RWVQFYVPlXVDjW1dUBGfYMYblWNTc0trSDXt7V3YFfViRTbXd2GOPzYA1NS1NvXL4Yj5UyYOGkyCEyZOm36DFtcqVAkrxwCCsTgMY0ld0jC8jxK5hj4XItPlRBBVWJcDNwzpWbhB7az5zDw8PLxEwACggCeCryAnI8lZQAAAABJRU5ErkJggg=="/>
+                         </svg>                         
+                    </a>
+                    <a class="icon-socials" href="#">
+                        <svg width="35" height="35" viewBox="0 0 35 35">
+                            <image id="Слой_3" data-name="Слой 3" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACglBMVEX/gRb/hCL/hCH/fw7/hir/gBH/hij/gBH/hin/gR3/fAn/oWL/omX/omT+n1b/ijT/ijP/izX/iTL/iTH/iTD/hyz/hiv/hy7/hCb/gyf/izT/kDn/hy//gyb/iC//iS/+giL7mlP/y6j/4dH/6dv/2MD9tH3+iDH/hin7tob99/T////+////3cP/kDv/gyX/qWn//P384c/+17z99fH+07X/gyP/iS7+4s3//Pv+tHj+hSj/hif6kUD74M7+olz/hSf/hSv+lUP+/Pv+0q7/gB78n1z+/fr8xZv/iTP/hSr+n1b+u3//fRj/iDD/kj/++O/+zKT/fxv/lD//+/r907P+gCD/hiz/gSH9oFz+/fz9wpf/gSD/iC7+iC37383++vj9tX7+hSX+hin/mEn+5tX+nVj/hir/hCf9o2D//Pj859j738z+9/L/1LX/exT5rnf++/j+2L3/iCv/gB//nVL9o179gB7/lkT+x5/94M36387+2L/8rXH8fhz9lUX9pmT+jDX/hCj9nVT+9fL9///+2rz/oFj6gSX/fxz6ijX6wZb98/D9v5j/gyT6oV78/////v7+5tb8xJz/wpn+2sD8z6/+hCb8hSz9t4X98Oj/0bD/lUP/hy3/jDP8uIT/4Mf/7uP+0qv/nVT/giH/eBD/xJ775dX8ijX/ehL/iDH/giX/tYH/+ff//fz/1bX/iS3/ijL/gSL/tID//f3/1rr/iCr/hSn+tYL/yp//q3D++/r/1rn/jDT+pWL/0a7+fhn7rnX9+vn/zKT/fx3+pWT+/v//hSj/gR/+q3H/+vn+z6b+iCz8rXP/tH3+o2D9uoX/jTj/giP/hCX/hSYAAABi2DY3AAAAD3RSTlPp8/PT9+D03fT34Onz89OJs0bkAAAAAWJLR0TVfrw7EwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+UEFQMVBV2DjT4AAAG7SURBVDjLY2BgZCIAGJkZWPgFCABBVgY2IWECQICddoqERETFxAkpkpCUkpaRlRPCo0heQVFJWUVVTV1DCKciEQlNLW0g0NHVE8OpSN/AUFvHyNhEW9vUDJcicXMLbUsraxtbO20dewch7IocnZy1XVwd5Vzd3LU9XD2xK/Ly1tbx8RUQ9vMP0A4MEsBhUnCIdmhYuF9EZJR2dAwO62Lj4rUTEpOSU1K1tdPScfkuIzNLWzs7J1dbOw+n74Rl8wsKweFUVFwSi8M68dKy8orKquqa2rr6hkY5rIqamlta29qDyjs6u7p7WnszRLAoEurrn6CtPXHS5ClTQXEzbbofVutmzJylDQOz58zF7iY52XnzFyzU1s5NXbR4iSMOhwsLy0QsXaatvXzFSrFVuNOTyOo1a7W1163fILYRpyK/TZu3gF20ddt2IRyK/Bx2ANXs3LVbW3vPXnEcihz36Whr75c4cPCQtvbhIzhSgdfRY9qzj4sJnTh5Sud0Jw5FImfOnosVExIW6Tt/4aIfDuuERfQvQeLicowoLocjgBC+fIcVEKuIw1OIAOBnZ+B0uEIAHOdi4ObhJQB4+AACmcjx84qGvQAAAABJRU5ErkJggg=="/>
+                        </svg>
+                      </a>
+                </div>
+                <div class="header__top-menu">
+                    <ul class="top-list-menu">
+                        <li class="top-list-item"><a class="list-item-link" href="#">г. Лиски
+                            <svg width="15" height="15" viewBox="0 0 451.847 451.847">
+                            <g>
+                                <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+                                    c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+                                    c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+                            </g>
+                            </svg>
+                            <br><span class="sub-bottom-text">Ваш город</span>
+                        </a>
+                            <ul class="sub-list-menu">
+                                <li class="sub-list-item"><a class="list-item-link" href="#">г. Минск</a></li>
+                                <li class="sub-list-item"><a class="list-item-link" href="#">г. Мурманск</a></li>
+                                <li class="sub-list-item"><a class="list-item-link" href="#">г. Ростов</a></li>
+                                <li class="sub-list-item"><a class="list-item-link" href="#">г. Мирный</a></li>
+                                <li class="sub-list-item"><a class="list-item-link" href="#">г. Москва</a></li>
+                                <li class="sub-list-item"><a class="list-item-link" href="#">г. Либерцы</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-logo">
+                    <a class="logo fn-st" href="#">Librov.ru</a>
+                    <br>
+                    <p class="sub-bottom-text">Объявления по-домашнему</p>
+                </div>
+                <div class="toggle-menu">
+                    <span></span>
+                </div>
+            </div>
+            <div class="header-aside">
+                <div class="widgets-weather">
+                    <div class="widgets-img">
+                        <svg width="44" height="30" viewBox="0 0 44 30">
+                            <image id="Слой_29" data-name="Слой 29" width="39" height="28" xlink:href="data:img/png;base64,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"/>
+                        </svg>
+                    </div>
+                    <div class="weather-info">
+                        <div class="day-info fn-st">Четверг, 15 апреля</div>
+                        <div class="date-info fn-st">9 градусов, пасмурно</div>
+                    </div>
+                 </div>
+                <div class="preview-news">
+                    <div class="preview-news__img">
+                        <svg width="48" height="45" viewBox="0 0 48 45">
+                            <image id="Слой_31" data-name="Слой 31" width="48" height="45" xlink:href="data:img/png;base64,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"/>
+                         </svg>                         
+                    </div>
+                    <div class="preview-news__desc fn-st">с Днем Космонавтики!!!</div>
+                </div>
+                <div class="meta-ad">в этой бегущей строке Вы можете разместить свою рекламу или любое объявление</div>
+            </div>
+        </div>
+    </header>
+    <div class="modal-auth">
+        <div class="container">
+            <div class="modal-auth__wrapper">
+                <div class="profile__profile-menu-wrapper">
+                    <div class="profile__tag-title fn-st">Либров / Личный кабинет</div>
+                    <h1 class="title-1">Личный кабинет</h1>
+                    <div class="profile__profile-menu">
+                        <ul class="profile__profile-menu-inner">
+                            <li class="profile__list-item fn-st">Объявления
+                                <ul class="profile__sub-menu">
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st active">Активные</a></li>
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st">Черновики</a></li>
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st">Архив</a></li>
+                                </ul>
+                            </li>
+                            <li class="profile__list-item fn-st">Отзывы
+                                <ul class="profile__sub-menu">
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st active">Мои</a></li>
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st">Мне</a></li>
+                                </ul>
+                            </li>
+                            <li class="profile__list-item fn-st">Сообщения и аудиосообщения
+                                <ul class="profile__sub-menu">
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st active">Мои</a></li>
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st">Мне</a></li>
+                                </ul>
+                            </li>
+                            <li class="profile__list-item fn-st">Избранное
+                                <ul class="profile__sub-menu">
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st active">Мои</a></li>
+                                    <li class="sub-list-item fn-st"><a href="#" class="sub-item-link fn-st">Мне</a></li>
+                                </ul>
+                            </li>
+                            <li class="profile__list-item fn-st">Платные услуги</li>
+                            <li class="profile__list-item fn-st">Настройки</li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-form">
+                    <form class="contact-form">
+                        <p class="contact-form_head_text">Введите логин и пароль</p>
+                        <div class="form-item">
+                            <input required type="email" name="email" class="form-field">
+                            <label class="fake-placeholder">Имя пользователя</label>
+                        </div>
+                        <div class="form-item">
+                            <input required type="text" name="subject" class="form-field">
+                            <label class="fake-placeholder">Введите пароль</label>
+                        </div>
+                        <div class="form-item form-btn">
+                            <input type="submit" value="Войти">
+                        </div>
+                        <a href="#" class="contact-form_bottom_text">Забыли пароль?</a>
+                    </form>
+                    <div class="answer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="footer-logo">Librov.ru</div>
+                <div class="footer-menu">
+                    <div class="footer-mainmenu footer-menu-block">
+                        <h2 class="footer-title fn-st">Меню</h2>
+                        <ul class="footer-list">
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Овощи, зелень</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Фрукты и Ягоды</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Молочные продукты</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Мясо и Рыба</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Хлеб, злаки, масла</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Мёд, орехи</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Скотный двор</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-socials footer-menu-block">
+                        <h2 class="footer-title fn-st">мы в соц. сетях</h2>
+                        <ul class="footer-list">
+                            <li class="footer-list-item"><a class="footer-list-link" href=""> Мы ВКонтакте</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Мы в Одноклассниках</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Мы в Twitter</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Мы в Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services footer-menu-block">
+                        <h2 class="footer-title fn-st">О ПОРТАЛЕ</h2>
+                        <ul class="footer-list">
+                            <li class="footer-list-item"><a class="footer-list-link" href="">О нас</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Политика конфиденциальности</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Обработка персональных данных</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-clients footer-menu-block">
+                        <h2 class="footer-title fn-st">НАШИМ ПАРТНЕРАМ</h2>
+                        <ul class="footer-list">
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Платное размещение</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Реклама на сайте</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Сотрудничество</a></li>
+                            <li class="footer-list-item"><a class="footer-list-link" href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="libs/jquery/jquery-3.5.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>

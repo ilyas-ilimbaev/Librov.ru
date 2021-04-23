@@ -1,0 +1,113 @@
+.contacts-form {
+    width: 250px;
+    height: 380px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    @media only screen and (min-width: 1200px) {
+        width: 350px;
+    }
+}
+.contact-form_head_text {
+    margin-bottom: 36px;
+    font-size: 18px;
+    font-family: "OfficinaSerifBoldC";
+    color: rgb(135, 135, 135);
+    line-height: 1.2;
+    @media only screen and (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
+.contact-form_bottom_text {
+    display: inline-block;
+    font-size: 16px;
+    font-family: "OfficinaSerifBoldC";
+    color: rgb(135, 135, 135);
+    line-height: 1.2;
+    @media only screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+form.contact-form {
+    max-width: 500px;
+    padding: 40px 15px;
+    @media only screen and (min-width: 768px) {
+    }
+    @media only screen and (min-width: 1200px) {
+        padding: 40px;
+    }
+}
+.form-item {
+    position: relative;
+    .form-field {
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid rgb(135, 135, 135);;
+        height: 50px;
+        font-size: 30px;
+    }
+    textarea.form-field {
+        height: 130px;
+    }
+    input[type="submit"] {
+        appearance: none;
+    }
+}
+.form-item + .form-item {
+    margin-top: 50px;
+}
+.contacts-form input:hover {
+    border-bottom: 2px solid #2ba5cd;
+}
+.fake-placeholder {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(135, 135, 135);;
+    pointer-events: none;
+    transition: .5s;
+    @media only screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+.fake-placeholder.active {
+    top: -25px;
+    font-size: 16px;
+    color: #2ba5cd;
+    @media only screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+.form-btn input {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 8px 80px;
+    height: 39px;
+    font-size: 16px;
+    font-family: "OfficinaSerifBoldC";
+    color: #2ba5cd;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 2px solid #2ba5cd;
+    border-radius: 9px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    cursor: pointer;
+    @media only screen and (min-width: 1200px) {
+        & {
+            font-size: 18px;
+        }
+    }
+}
+.error {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ff0000;
+    position: relative;
+    top: -10px;
+}

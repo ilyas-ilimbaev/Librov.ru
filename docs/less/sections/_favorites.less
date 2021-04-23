@@ -1,0 +1,194 @@
+.profile__profile-content-wrapper.fav {
+    flex-direction: row;
+    align-items: baseline;
+}
+.profile__profile-user-content {
+    position: relative;
+    width: 128px;
+    padding: 15px 15px;
+    border: 2px solid rgba(212, 153, 0, 0.42);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px -4px rgba(244, 170, 3, 0.722);
+    background-color: rgba(217, 216, 211, 0.361);
+    @media only screen and (min-width: 640px) {
+        & {
+            width: initial;
+            height: 100%;
+        }
+    }
+}
+.profile__profile-user-content:not(:nth-of-type(1)) {
+    margin-top: 45px;
+    margin-left: 14px;
+    @media only screen and (min-width: 640px) {
+        & {
+            margin-left: 25px;
+            margin-top: 0;
+            margin-bottom: 45px;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        & {
+            margin-left: 45px;
+        }
+    }
+}
+.proflie__profile-active-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: 640px) {
+        & {
+            flex-direction: row;
+        }
+    }
+}
+.profile__setting-form {
+    display: block;
+
+}
+.profile__profile-user {
+    text-align: center;
+    @media only screen and (min-width: 640px) {
+        & {
+            margin-right: 30px;
+        }
+    }
+}
+.profile__profile-userpics {
+    border-radius: 84px;
+    overflow: hidden;
+}
+.profile__profile-user-info, .profile__user-location {
+    margin-top: 15px;
+    cursor: pointer;
+}
+.profile__nameuser-title {
+    font-size: 18px;
+}
+.profile__nameuser-title, .profile__user-location {
+    font-family: "OfficinaSerifBoldC";
+    color: rgb(52, 52, 52);
+    line-height: 1.2;
+}
+.profile__user-location {
+    font-size: 16px;
+}
+.profile__profile-edit {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    @media only screen and (min-width: 640px) {
+        & {
+            margin-top: 0;
+            flex-direction: column;
+        }
+    }
+}
+.profile-edit__select {
+    display: inline-block;
+    margin-right: 25px;
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+    line-height: 1.2;
+    text-align: center;
+    background-color: #2ba5cd;
+    border-radius: 5px;
+    cursor: pointer;
+    @media only screen and (min-width: 640px) {
+        & {
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    & svg {
+        height: auto;
+    }
+}
+.profile__setting-form-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    @media only screen and (min-width: 1200px) {
+        & {
+            flex-direction: row;
+        }
+    }
+
+}
+.profile__setting-form-wrap .profile__profile-user-content {
+    width: initial;
+     margin-bottom: 25px;
+    @media only screen and (min-width: 1200px) {
+        & {
+            margin-bottom: 0;
+        }
+    }
+}
+form.profile__contact-form {
+    max-width: initial;
+    @media only screen and (min-width: 640px) {
+        & {
+            padding: 0 45px 0 0;
+        }
+    }
+}
+.contact-form__flex-wrapp {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 640px) {
+        & {
+            flex-direction: row;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        & {
+            margin-bottom: 0;
+        }
+    }
+}
+.contact-form__content-box {
+    @media only screen and (min-width: 640px) {
+        & {
+            width: 50%;
+        }
+    }
+}
+.contact-form__content-box:first-child {
+    @media only screen and (min-width: 640px) {
+        & {
+            float: left;
+            margin-right: 45px;
+        }
+    }
+}
+.contact-form__content-box:last-child {
+    margin-top: 45px;
+    @media only screen and (min-width: 640px) {
+        & {
+            float: right;
+            margin-top: 0;
+        }
+    }
+}
+.profile__contact-form .form-btn {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.setting-item .form-field {
+    height: 40px;
+    font-size: 18px;
+    @media only screen and (min-width: 640px) {
+        & {
+            height: 50px;
+            font-size: 30px;
+        }
+    }
+}

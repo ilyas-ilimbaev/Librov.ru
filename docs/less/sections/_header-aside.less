@@ -1,0 +1,54 @@
+.day-info, .date-info, .preview-news__desc {
+    font-size: 14px;
+    @media only screen and (min-width: 640px) {
+        & {
+            font-size: 18px;
+        }
+    }
+}
+.header-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 1200px) {
+        & {
+            flex-wrap: nowrap;
+        }
+    }
+}
+.widgets-weather, .preview-news {
+    margin-bottom: 35px;
+    width: 180px;
+    display: inline-flex;
+    align-items: center;
+    @media only screen and (min-width: 640px) {
+        & {
+            width: 280px;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        & {
+            margin-right: 35px;
+            margin-bottom: 0;
+        }
+    }
+}
+.widgets-img {
+    margin-right: 10px;
+}
+.preview-news__img {
+    margin-right: 10px;
+    width: 48px;
+    height: 45px;
+}
+.meta-ad {
+    position: relative;
+    display: inline-flex;
+    width: 717px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
